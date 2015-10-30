@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-  <title><%= @title %></title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+		<title>Rewatch</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:700,300' rel='stylesheet' type='text/css'>
+		<style type="text/css" media="screen">
+			body {
+				background: #222;
+				padding: 0;
+				margin: 0;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 300;
+				color: white;
+			}
+			
+			a {color: #F74E40; text-decoration: none}
+			a:hover {color: white; text-decoration: none}
+			
+			html {
+				box-sizing: border-box;
+			}
+			
+			*, *:before, *:after {
+				box-sizing: inherit;
+			}
+			
+			.container {height: 100%; overflow: hidden}
+			
+			.col1 {float: left; width: 50%; background: #000; padding: 100px 50px; text-align: center;}
+			.col2 {float: left; width: 50%; background: #222; padding: 300px 50px; text-align: center;}
+			
+			.footer {padding: 50px; background: #3E3E3E; text-align: center}
+			
+			h1 span {color: #F74E40; font-weight: 300; margin: 0 0 20px 0; padding: 0}
+			p {color: rgba(255,255,255,.5); margin: 0 0 40px 0; font-size: 1.2em}
+			
+			input {background: transparent; border: 1px solid #545454; padding: 20px; margin: 0; border-right: none; font-size: 1.2em; color: white; font-family: 'Roboto', sans-serif;}
+			input:focus {/* border-color: #F74E40; */ outline: none}
+			input[type="submit"] {background: #545454; border: 1px solid #545454; cursor: pointer}
+			input[type="submit"]:hover {background: #F74E40; border: 1px solid #F74E40; cursor: pointer}
+			
+			::-webkit-input-placeholder {
+			   color: #545454;
+			}
+			
+			:-moz-placeholder { /* Firefox 18- */
+			   color: #545454;  
+			}
+			
+			::-moz-placeholder {  /* Firefox 19+ */
+			   color: #545454;  
+			}
+			
+			:-ms-input-placeholder {  
+			   color: #545454;  
+			}
+			
+			@media screen and (max-width: 1010px) {
+				.col1, .col2 {width: 100%; float: none; padding: 100px 30px}
+				.footer {padding: 30px;}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		<div class="col1">
+			<%= image_tag("iPhone.png", :alt => "iPhone showing the rewatch app") %>
+		</div>
+		
+		<div class="col2">
+			<%= image_tag("logo.png", :alt => "Rewatch Logo") %>
 
-<%= yield %>
+			<h1>REWATCH <span>BETA</span></h1>
 
-</body>
+			<%= yield %>
+		</div>
+		</div>
+		<div class="footer">Perfectly cooked by <a href="http://www.twitter.com/@palleas" target="_blank">@palleas</a> and <a href="http://www.twitter.com/@bentoutif" target="_blank">@bentoutif</a></div> 
+	</body>
 </html>

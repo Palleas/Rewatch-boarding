@@ -35,3 +35,5 @@ en:
   message_success_pending: "Successfully added you as tester. You'll be notified once the next build is available"
   message_email_exists: "Email address is already registered"
   message_error: "Something went wrong, please contact the application owner"
+  invite_text: "Register to receive a beta version<br/> of the application on your iPhone."
+  app_description: 'Use your <a href="https://betaseries.com">Betaseries</a> account to rewatch an episode of your favorite TV show.'

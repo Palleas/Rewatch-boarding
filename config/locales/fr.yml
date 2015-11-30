@@ -35,3 +35,5 @@ fr:
   message_success_pending: "Vous avez bien été enregistré en tant que testeur. Vous serez averti par e-mail lorsque l'application sera disponible."
   message_email_exists: "Cette adresse e-mail a déjà été enregistrée."
   message_error: "Une erreur s'est produite. Veuillez contacter le développeur de l'application."
+  invite_text: "Inscrivez vous pour recevoir une version beta<br /> de l'app sur votre iPhone"
+  app_description: 'Utilisez votre compte <a href="https://betaseries.com">Betaseries</a> pour redécouvrir un episode de vos séries préferées.'

@@ -2,8 +2,7 @@
     <%= form_tag("/submit", method: "post") do %>
       <p>Inscrivez vous pour recevoir une version beta<br /> de l'app sur votre iPhone</p>
 
-      <%= email_field_tag :email, '', class: "form-control", placeholder: t(:email_placeholder) %>
-      <%= submit_tag t(:get_beta_access), class: 'btn btn-lg btn-primary btn-block', id: "submit" %>
+      <%= email_field_tag :email, '', class: "form-control", placeholder: t(:email_placeholder) %><%= submit_tag t(:get_beta_access), class: 'btn btn-lg btn-primary btn-block', id: "submit" %>
     <% end %>
   <% else %>
     <p class="alert alert-<%= @type %>">
